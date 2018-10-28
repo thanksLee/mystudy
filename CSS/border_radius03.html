@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS3 border-radius</title>
+<style>
+body {
+	margin: 10px;
+	font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+}
+p {
+	line-height: 20px;
+	font-family: Helvetica, Arial;
+	font-size: 12px;
+}
+
+div.rounded1{
+	position:static;
+	padding:15px;
+	width:400px;
+	background:#5f5f5f;
+	color:#fff;
+	border-radius: 10px;
+}
+
+div.rounded2{
+	position:absolute;
+	left:450px;
+	top:10px;
+	padding:15px;
+	background:#8ac007;
+	color:#fff;
+	border-bottom-right-radius: 15px;
+	border-top-right-radius: 15px;
+}
+</style>
+</head>
+
+<body>
+<div class="rounded1">
+	<p>
+		Photoshop is even better in Creative Cloud.<br>
+		From Smart Object support for Blur Gallery to Conditional Actions,<br>
+		Adobe Photoshop includes over a dozen new features available only to members of Adobe Creative Cloud™.
+	</p>
+</div>
+<div class="rounded2">
+	<p>
+		What’s new in Dreamweaver?<br>
+		Adobe Dreamweaver CS6 web design software provides an intuitive visual interface for making and editing HTML websites and mobile apps. Use new Fluid Grid Layout designed for cross-platform compatibility to create adaptive layouts. Review designs with the enhanced Multiscreen Preview before publishing.
+	</p>
+</div>
+</body>
+</html>

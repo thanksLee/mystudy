@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>CSS3 border-radius</title>
+<style>
+/*
+브라우저를 뜻하는 구문은 다음과 같습니다.
+-webkit- : 웹킷(Webkit) 방식 브라우저용(사파리나 크롬 등)
+-moz- : 게코(Gecko) 방식 브라우저용(파이어폭스 등)
+-o- : 오페라 브라우저
+-ms- : 마이크로소프트 인터넷 익스플로러
+*/
+body {
+	font-family: Verdana, Geneva, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+#rcorners1 {
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+	background: #8ac007;
+	border-radius: 25px;
+}
+#rcorners2 {
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+	border: 2px solid #8ac007;
+	border-radius: 25px;
+}
+#rcorners3 {
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+	background: url(paper.gif);
+	background-position: left top;
+	background-repeat: repeat;
+	border-radius: 25px;
+}
+</style>
+</head>
+
+<body>
+<p>The border-radius property allows you to add rounded corners to elements.</p>
+<p>Rounded corners for an element with a specified background color:</p>
+<p id="rcorners1">Rounded corners!</p>
+<p>Rounded corners for an element with a border:</p>
+<p id="rcorners2">Rounded corners!</p>
+<p>Rounded corners for an element with a background image:</p>
+<p id="rcorners3">Rounded corners!</p>
+</body>
+</html>

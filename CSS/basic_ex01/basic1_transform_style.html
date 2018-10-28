@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS3 transform</title>
+<style>
+#div1{
+	position: relative;
+	margin:100px;
+	padding:10px;
+	width:200px;
+	height:200px;
+	border:1px solid black;
+
+}
+#div2{
+	position: absolute;
+	padding:50px;
+	background-color:red;
+	border:1px solid black;
+	-webkit-transform:rotateY(60deg);
+	-webkit-transform-style:preserve-3d;
+	transform:rotateY(60deg);
+	transform-style:preserve-3d;
+}
+#div3{
+	position: absolute;
+	padding:40px;
+	background-color:yellow;
+	border:1px solid black;	
+	-webkit-transform:rotateY(-60deg);
+	transform:rotateY(-60deg);
+}
+</style>
+</head>
+
+<body>
+<div id="div1">
+	<div id="div2">
+		HELLO
+		<div id="div3">YELLOW</div>
+	</div>
+</div>
+<p><b>Note:</b> Internet Explorer 10 and earlier versions do not support the transform-style property.</p>
+<p><b>Note:</b> Chrome, Safari and Opera supports an alternative, the -webkit-transform-style property.</p>
+</body>
+</html>
